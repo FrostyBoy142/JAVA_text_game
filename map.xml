@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<world>
+    <!-- John DOE -->
+    	
+    	<objective type ="goPlace" description="Aller dans la chambre" option="5"></objective>
+
+   
+    	<place id="1" name="Cuisine" description ="Vous êtes dans la cuisine, elle n'est pas très grande mais on peut y manger tranquillement.">
+			<chest name ="Meuble de cuisine" padlockType="none" optionPadLock="none">
+				<item id="5" type="eadable" weight="5" healthGain="5">Soupe</item>
+				<item type="eadable" weight="5" healthGain="15">Cassoulet</item>
+				<item type="none" weight="5">Casserole</item>
+			</chest>
+    		<item type="eadable" weight="5" healthGain="15">Cassoulet</item>
+    		<item type="eadable" weight="10" healthGain="30">Courgette</item>
+    		<item id="30" type="none" weight="5" >Chambre Key</item>
+    		
+    		<helpingcharacter name="eadable" speech="Bonjour je m'appelle Alexandre, comment vas-tu ?">Alexandre</helpingcharacter>
+    		
+    		
+    		<exit idPlace="3" padlockType="none" optionPadLock="none"></exit>
+    	</place>
+    	<place id="2" name="Salle de bain" description ="Vous êtes dans la salle de bain. Elle possède une magnifique baignoire.">  		
+			<chest name="Coffre" padlockType="none">
+				<item type="eadable" weight="5" healthGain="5">Soupe</item>
+				<item type="eadable" weight="5" healthGain="15">Cassoulet</item>
+			</chest>
+			
+			
+    		<item type="eadable" weight="5" healthGain="15">Cassoulet</item>
+    		<exit idPlace="1" padlockType="none"></exit>
+    			<exit idPlace="4" padlockType="none" ></exit>
+    	</place>
+    	<place id="3" name="Salon" description="Vous êtes dans le salon de la maison, il est très sale.">  		
+    		<chest name="Coffre" padlockType="none">
+				<item type="eadable" weight="5" healthGain="5">Soupe</item>
+				<item type="none" weight="5" >Book</item>
+				<item type="none" weight="5" >Pencil</item>
+			</chest>
+			<item type="none" weight="5" >Chaise</item>
+				<item type="none" weight="5" >Table</item>
+			<enemy name="Ghost" health="15" strenght="3">Ghost</enemy>
+    		<exit idPlace="4" padlockType="none" ></exit>
+    		<exit idPlace="1" padlockType="none" ></exit>
+
+    	</place>
+    	<place id="4" name="Couloir" description="Ce couloir n'est pas très utile.">  		
+        		
+        		<exit idPlace="2" padlockType="none" optionPadLock="none"></exit>
+        		<exit idPlace="3" padlockType="none" optionPadLock="none"></exit>
+        		<exit idPlace="5" padlockType="item" optionPadLock="30"></exit>
+    	</place>
+    	<place id="5" name="Chambre" description="Cette chambre fait vraiment très peur.">  		
+        		<enemy name="Ghost" health="15" strenght="3">Ghost</enemy>
+        		<exit idPlace="4" padlockType="none" optionPadLock="none"></exit>
+    	</place>
+</world>
+
